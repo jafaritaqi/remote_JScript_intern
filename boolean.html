@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Boolean Values</title>
+</head>
+
+<body>
+
+	
+</body>
+</html>
+<script type="text/javascript">
+
+	/*
+function returnBoolean(logic){
+	if(logic){
+		return "Yes, that was true";
+	}
+	return "No, that was false";
+}
+
+console.log(returnBoolean(true));
+// testEqual tries to change the values of comparison to the same types 
+function testEqual(val){
+	if(val == 2){
+		return "Equal";
+	}
+	return "Not Equal";
+}
+
+console.log(testEqual(2)); //equal
+console.log(testEqual('2')); //equal
+
+//testStrict will not change or rather assume the same type variables 
+
+function testStrict(val){
+	if(val === 2){
+		return "Equal";
+	}
+	return "Not Equal";
+}
+
+
+console.log(testStrict(2)); //equal
+console.log(testStrict('2')); //not equal
+
+
+
+
+/*
+a == b performs a type conversion before comparison 
+
+a === b will not perform a type conversion and compare the argument as it is
+
+a !== b it is not going to perform type conversions when comparing two values.
+
+
+a!=b it performs a not equality comparison it return true of 'a' is not equal 'b'
+
+a < b  this operator checks if a is less than b and returns true if a is less than b
+
+a > b this operator checks if a is greater than b and returns true if a is greater than b
+
+a <= b this operator check if a is less than or equal to b and returns true if a is less than or equal b
+
+a >= b this operator check if a is greater or equal b. it will return true if a is greater than b or equal b.
+
+AND operators == && two ampersand allows to combine more than two logical expressions. it return true if both side of operators are true.
+
+OR == || two vertical bar lets you to combine two logical expressions and it returns true if one side or both side of operator are true 
+
+*/
+/* size determination according to number
+
+function ifStatment(num) {
+	if(num < 5){
+		return "Tiny";
+	} else if (num <10) {
+		return "Small";
+	} else if (num<15) {
+		return "Medium";
+	} else if (num<20){
+		return "Large";
+	} else {
+		return "Huge";
+	}
+}
+
+console.log(ifStatment(20));
+*/ 
+
+var name = ["HOLE-IN-ONE","EAGLE", "BIRDIE", "PAR" ,"BOGEY", "DOUBLE BOGEY","GO HOME"];
+function golfScore(par, strokes){
+	if (strokes==1) {
+		return name[0];
+	} else if (strokes <= par-2) {
+		return name[1];
+	} else if (strokes == par-1) {
+		return name[2];
+	} else if (strokes == par) {
+		return name[3];
+	} else if (strokes == par+1) {
+		return name[4];
+	} else if (strokes == par+2) {
+		return name[5];
+	} else if(strokes >= par +3){
+		return name[6];
+	} 
+}
+
+
+console.log(golfScore(5,4));
+
+
+
+</script>

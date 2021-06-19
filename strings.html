@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Taqi's gonna rock'n learn</title>
+</head>
+
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+
+// Declaring string variables
+/*
+var firstName = "Taqi";
+var lastName = "Jafari";
+*/
+
+
+// Escaping Literal Quotes in Strings
+//var myStr = "I am a \"double quoted\" string inside \"double quotes\"";
+//console.log(myStr);
+
+/*
+myStr = "<a href = \"https://www.example.com\" target = \"_blank\">link</a>"; // myStr and myStr2 are the same 
+var myStr2 = '<a href = "https://www.example.com" target = "_blank">link</a>'
+
+
+console.log("myStr = " + myStr);
+
+console.log("myStr2 = " + myStr2);
+*/
+
+/*Escape characters
+
+	CODE OUTPUT
+	\' single qoute
+	\" double quote
+	\\ bachslash
+	\n newline
+	\r carriage return
+	\t tab
+	\b backspace
+	\f form feed
+
+*/
+/*
+var myStr3 = "first line\n\t\\second line\n third line";
+console.log(myStr3)
+*/
+
+/*
+// Concatenating strings
+var myStr = "This is really " + " fun!";
+myStr += " I really love it!:D"
+//console.log(myStr);
+
+
+var myName = "My name is Taqi";
+
+var paragraph = myName + ". \n" + myStr;
+
+console.log(paragraph);
+
+*/
+
+/*
+
+//Appending variables to String
+
+
+var someAdjective = "worthwhile";
+var myStr = "Learning to code is ";
+
+myStr += someAdjective;
+
+console.log(myStr);
+
+*/
+
+/*************
+//Find length of strings
+
+var firstNameLength = 0;
+var firstName = "Taqi";
+
+firstNameLength = firstName.length;
+
+console.log(firstNameLength);
+**************/
+
+
+/***********
+//Bracket Notations to find first character in string
+
+var firstLetterOfFirstName = "";
+var firstName = "Taqi";
+
+firstLetterOfFirstName  = firstName[0]; //it will result undifined because JavaScript is 0 indexing language.
+console.log(firstLetterOfFirstName); // Output will be 'T'
+
+
+var secondLetterOfFirstName = firstName[1];
+console.log(secondLetterOfFirstName);
+
+var thirdLetter = firstName[2];
+console.log(thirdLetter);
+
+
+var lastLetterOfFirstName = firstName[firstName.length-1]; //This is good practice of finding the last letter of string without knowing the length of that string
+console.log(lastLetterOfFirstName);
+
+************/
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+
+	//Your code below this line
+	var result="";
+	result += "The "+myAdjective+" "+ myNoun +" " + myVerb + " to the store " + myAdverb;
+
+
+
+
+	//You code above this line
+	return result;
+
+
+}
+
+
+// Change the words here to test your function
+
+console.log(wordBlanks("dog" , "big", "ran", "quickly"));
+
+
+console.log(wordBlanks("bike" , "slow", "flew", "slowly"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

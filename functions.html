@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Functions</title>
+</head>
+
+<body>
+
+	
+</body>
+</html>
+<script type="text/javascript">
+/***********************
+ * 
+ *	FUNCTIONS 
+ * 
+ * 
+ * 
+ * ******/
+
+/*
+function helloWorld(){
+	console.log("Hello world!");
+}
+
+helloWorld();
+//passing arguments with functions
+function subtraction(a , b){
+	console.log( a - b);
+}
+
+subtraction(109,98);
+*/
+
+/*
+// global scope and functions
+var myGlobal = 15;
+
+function fun1(){
+	oopsGlobal = 5; 
+	// little explanations:
+	//IT IS POSSIBLE TO DEFINE A VARIABLE WITHOUT USING 'var' keyword
+	//what's the differene? if we don't use the keyword 'var' in defining a variable it will automatically makes it a GLOBAL VARIABLE even if it's declared inside a function.
+
+	//Hence, the oopsGlobal variable is accessible inside fun2 as well.
+
+	//NOTE: if we put the 'var' keyword at the beginning of oopsGlobal it will make it a local variable to this function and its life cycle will be limited to fun1... and can't be used outside this function.
+	
+}
+
+function fun2(){
+	var output = "";
+	if (typeof myGlobal != "undefined"){
+		output+= "myGlobal: " + myGlobal+"\n";
+	}
+	if (typeof oopsGlobal !="undefined") {
+		output+= "oopsGlobal: " + oopsGlobal;
+	}
+
+	console.log(output);
+}
+
+
+fun1();
+fun2();
+
+//local scope and functions
+function myLocalScope(){
+	var myVar = 8;
+	console.log(myVar);
+}
+
+myLocalScope();
+console.log(myVar); //since the myVar variable is a local scoped variable it will give an error
+
+*/
+
+/*
+
+// local vs global scope in functions
+var name ="Taqi";
+
+function callOutName(){
+	var name = "Mohammad";
+	return name;
+}
+//Caustions: allways use bracket when calling a function otherwise it won't function properly
+console.log(callOutName()); // Mohammad 
+console.log(name); // Taqi
+
+*/
+
+
+/*
+// we can have a function to return value to us as follows:
+function minusSeven (num){
+	return num-7;
+}
+
+console.log(minusSeven(19));
+*/
+
+//stand in line example
+
+function nextInLine (arr, item){
+
+	arr.push(item); 
+	return arr.shift();
+}
+
+var testArr = [1,2,3,4,5];
+
+console.log("Before: "+ JSON.stringify(testArr));
+console.log(nextInLine(testArr,6));
+console.log("After: "+ JSON.stringify(testArr));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
