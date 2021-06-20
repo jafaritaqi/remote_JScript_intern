@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	/*
+
+	class SpaceShuttle{
+	constructor (tragetPlanet){
+		this.tragetPlanet = tragetPlanet;
+	}
+}
+
+var zeus = new SpaceShuttle('Jupiter');
+
+console.log(zeus.tragetPlanet)
+
+
+function makeClass() {
+	class Vegetable{
+		constructor(name){
+			this.name = name;
+		}
+	}
+	return Vegetable;
+}
+
+const Vegetable = makeClass();
+const carrot = new Vegetable('carrot');
+console.log(carrot.name);
+
+*/
+class Book{
+	constructor(author){
+		this._author = author;
+	}
+
+	//getter 
+	get writer(){
+		return this._author;
+	}
+
+	//setter 
+	set writer(updatedAuthor){
+		this._author = updatedAuthor;
+	}
+}
+
+function makeClass() {
+	class Thermostat{
+		constructor(temp){
+			this._temp = 5/9*(temp-32); // whenever there is an underscore with a variable it means it is a private;
+		}
+
+		get temprature(){
+			return this._temp;
+		}
+		set temprature(updateTemp){
+			this._temp = updateTemp;
+		}
+	}
+
+	return Thermostat;
+}
+
+
+const Thermostat = makeClass();
+const thermos = new Thermostat(76);
+let temp = thermos.temprature;
+thermos.temprature = 26;
+temp = thermos.temprature;
+console.log (temp);
+
+
+
+
+
+
+</script>
