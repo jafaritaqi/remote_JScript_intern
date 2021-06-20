@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Practice</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+
+	//difference between 'var' and 'let' 
+	//let is most used to decalre const 
+	/*
+	var let multiple decalarations
+	while let can only be one during the program.
+	however we can change the value of let variable anywhere and anytime we want during our program.
+
+	*/
+
+	/*
+	var catName = "Quincy";
+	var quote;
+
+	var catName = "Beau";
+
+
+	function catTalk() {
+		"use strict";
+		catName = "Oliver";
+		quote = catName + "says Meow!";
+	}
+
+	catTalk();
+*/
+	/*
+		Scope of var and let
+	*/
+/*
+	function checkScope() {
+		"use strict";
+		let i = "function scope";
+		if (true) {
+			let i = "black scope";
+			console.log("block scope i is: ",i);
+		}
+		console.log("function scope i is: ",i);
+		return i;
+	}
+checkScope();
+*/
+	/*
+		const
+	*/
+/*
+	function printManyTimes(str) {
+		"use strict";
+		const SENTENCE = str + " is cool!";
+
+		for (let i = 0; i < str.length; i+=2){
+			console.log(SENTENCE);
+		}
+
+	}
+printManyTimes ("freeCodeCamp");
+
+//mutate an Array Declared with const
+const s = [1,5,6];
+function editInPlace(){
+	"use strict";
+
+	// s = [2,3,4];
+	s[0] = 2;
+	s[1] = 3;
+	s[2] = 4;
+
+}
+editInPlace();
+
+console.log(s);
+*/
+
+////// Prevent Object Mutation
+//eventhough const declaration means the value of variable should not change but it is not always true as in case of arrays and objects.
+//in order to create an absolute const object we need to freeze it.
+/*
+function freezObj(){
+	"use strict";
+	const MATH_CONSTANT = {
+		PI:3.14
+	};
+
+	Object.freeze(MATH_CONSTANT);
+
+	try{
+		MATH_CONSTANT.PI = 99;
+	} catch(ex){
+		console.log (ex);
+	}
+	return MATH_CONSTANT.PI;
+}
+
+const PI = freezObj();
+console.log(PI);
+
+
+*/
+
+//Use Arrow Functions to Write Concise Anonymous Functions
+
+//the following three declarations are all the same except in each step we are shortening our lines of codes;
+
+// this function right here is called an anonymous function it doesn't have a name.
+/*
+var magic = function(){
+	return new Date();
+};
+//whenever we have an anonymous function we can change it to arrow function that makes it a little faster to code;
+
+var  magic = ()=>{
+	return new Date();
+};
+
+
+var magic = () => new Date();
+const magic = () => new Date();
+*/
+// Write Arrow Functions with Parameters;
+/*Just like a normal function an anonymous function can have arguments */
+
+var myConcat = function (arr1,arr2){
+	return arr1.concat(arr2);
+};
+//the following lines of code has the same effect but is shorter to write;
+var myShortConcat = (arr1,arr2) => arr1.concat(arr2);
+
+
+console.log(myConcat([1,2],[3,4,5]));
+console.log(myShortConcat([1,2],[3,4,5]));
+
+
+
+
+//Write Higher Order Arrow Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
