@@ -12,3 +12,5 @@ console.log(__dirname);
 setInterval(()=>{
 	console.log('Hello world');
 },1000)
+
+//to test the app go to the file directory and run node app.js
