@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Difference Between Arrow and Regular Function</title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+	
+function myFunction() {
+  console.log(this);
+}
+
+// Simple invocation
+myFunction(); // logs global object (window)
+
+
+
+const myObject = {method() {console.log(this)}}; //Method Invocation
+
+myObject.method();
+
+
+
+function myFunction() {
+  console.log(this);
+}
+
+const myContext = { value: 'A' };
+
+myFunction.call(myContext);  // logs { value: 'A' }
+myFunction.apply(myContext); // logs { value: 'A' }
+
+function MyFunction() {
+  console.log(this);
+}
+
+new MyFunction(); // logs an instance of MyFunction
+
+
+
+
+
+
+</script>
