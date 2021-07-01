@@ -17,13 +17,12 @@ setInterval(()=>{
 //CommonJS, Every file in Node is module (by defualt)
 //Modules - Encapsulated Code (Only share minimum)
 
-const name = require ('./4-names')
-const greeting = require('./5-utils')
-require('./7-mind-grenade')
+const name = require ('./4-names');
+const sayHi = require('./5-utils');
+ const data = require('./6-alternative-flavor');
+require('./7-mind-grenade');
 
 
-
-/* 
-greeting("Susan!");
-greeting(name.john);
-greeting(name.peter); */
+/* sayHi("Susan!");
+sayHi(name.john);
+sayHi(name.peter); */
