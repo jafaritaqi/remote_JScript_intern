@@ -1,0 +1,4 @@
+What is the difference between Asynchronous and Synchronous approach of fs module?
+A synchronous operation blocks a process till the operation completes. An asynchronous operation is non-blocking and only initiates the operation.
+
+Web apps are multiuser applications so if one user starts a synchronous operation, other users should wait until the end of operation but in asynchronous approach one user can start its task and at the same time other users will be able to use the application independently of the first task.
